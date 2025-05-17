@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.S. School of Engineering and Management - Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .header h2 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .class-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .subject-list {
+            margin-top: 30px;
+        }
+        .subject-list table {
+            margin-top: 10px;
+        }
+        .break {
+            background-color: #f2f2f2;
+        }
+        .lab {
+            background-color: #e6f7ff;
+        }
+        .tutorial {
+            background-color: #fff2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>K.S. SCHOOL OF ENGINEERING AND MANAGEMENT, BENGALURU-560190</h1>
+        <h2>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING SESSION: 2014-2015 FIFTH SEMESTER</h2>
+    </div>
+
+    <div class="class-info">
+        <div>Class: IV-CSE.V</div>
+        <div>Lecture Hours: LII: 464</div>
+        <div>Class Teacher: Mrs. Jayashree J</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DAY</th>
+                <th>8:45-9:40</th>
+                <th>9:40-10:30</th>
+                <th>10:30-10:50</th>
+                <th>10:50-11:45</th>
+                <th>11:45-12:40</th>
+                <th>12:40-1:30</th>
+                <th>1:30-2:20</th>
+                <th>2:20-3:10</th>
+                <th>3:10-4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Monday -->
+            <tr>
+                <td rowspan="2">MONDAY</td>
+                <td rowspan="2"></td>
+                <td class="lab">ADA Lab Batch - A2</td>
+                <td rowspan="2" class="break"></td>
+                <td>UHV</td>
+                <td>UC</td>
+                <td rowspan="2" class="break">LUNCH</td>
+                <td>MC</td>
+                <td>ADA</td>
+                <td>Tutorial</td>
+            </tr>
+            <tr>
+                <td class="lab">MC Lab Batch - A1</td>
+                <td>(BJHK489)</td>
+                <td>(BCS403)</td>
+                <td>(BCS401)</td>
+                <td></td>
+            </tr>
+
+            <!-- Tuesday -->
+            <tr>
+                <td rowspan="2">TUESDAY</td>
+                <td rowspan="2"></td>
+                <td class="lab">ADA Lab Batch - A1</td>
+                <td rowspan="2" class="break"></td>
+                <td>DBMS</td>
+                <td>MC</td>
+                <td rowspan="2" class="break">LUNCH</td>
+                <td>DMS</td>
+                <td>BIO</td>
+                <td>MC</td>
+            </tr>
+            <tr>
+                <td class="lab">MC Lab Batch - A2</td>
+                <td>(BCS404)</td>
+                <td>(BCS402)</td>
+                <td>(BCS405A)</td>
+                <td>(BBQC407)</td>
+                <td>(BCS402)</td>
+            </tr>
+
+            <!-- Wednesday -->
+            <tr>
+                <td rowspan="2">WEDNESDAY</td>
+                <td>BIO</td>
+                <td>ADA</td>
+                <td rowspan="2" class="break"></td>
+                <td>DMS</td>
+                <td>MC</td>
+                <td rowspan="2" class="break">LUNCH</td>
+                <td class="lab">LATEX Lab Batch - A2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>(BBQC407)</td>
+                <td>(BCS401)</td>
+                <td>(BCS405A)</td>
+                <td>(BCS402)</td>
+                <td class="lab">DBMS Lab Batch - A1</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Thursday -->
+            <tr>
+                <td rowspan="2">THURSDAY</td>
+                <td>DBMS</td>
+                <td>ADA</td>
+                <td rowspan="2" class="break">To Break</td>
+                <td>(SAM)</td>
+                <td>DMS</td>
+                <td rowspan="2" class="break">LUNCH</td>
+                <td class="lab">LATEX Lab Batch - A1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>(BCS403)</td>
+                <td>(BCS402)</td>
+                <td>(BCS403)</td>
+                <td>(BCS405A)</td>
+                <td class="lab">DBMS Lab Batch - A2</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Friday -->
+            <tr>
+                <td rowspan="2">FRIDAY</td>
+                <td>MC</td>
+                <td>DBMS</td>
+                <td rowspan="2" class="break"></td>
+                <td>DMS</td>
+                <td>DBMS</td>
+                <td rowspan="2" class="break">LUNCH</td>
+                <td></td>
+                <td>NSS/Vega / PE</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>(BCS403)</td>
+                <td>(BCS403)</td>
+                <td>(BCS405A)</td>
+                <td>(BCS402)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- Saturday -->
+            <tr>
+                <td>SATURDAY</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="subject-list">
+        <h3>SUBJECT CODES AND STAFF DETAILS</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>CODE</th>
+                    <th>SUBJECT</th>
+                    <th>HOURS</th>
+                    <th>STAFF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BCS401</td>
+                    <td>Analysis & Design of Algorithms</td>
+                    <td>4</td>
+                    <td>Dr. K. Venkat Rao</td>
+                </tr>
+                <tr>
+                    <td>BCS402</td>
+                    <td>Microcontrollers</td>
+                    <td>4</td>
+                    <td>Dr. Sivasubramanyam Naidu</td>
+                </tr>
+                <tr>
+                    <td>BCS403</td>
+                    <td>Microcontrollers Lab</td>
+                    <td>6</td>
+                    <td>Dr. Sivasubramanyam Naidu & Mrs. Jayashree J</td>
+                </tr>
+                <tr>
+                    <td>BCS404</td>
+                    <td>Database Management Systems</td>
+                    <td>4</td>
+                    <td>Mrs. Soumya Narayan</td>
+                </tr>
+                <tr>
+                    <td>BCS405</td>
+                    <td>Database Management Systems Lab</td>
+                    <td>6</td>
+                    <td>Mrs. Soumya Narayan & Mrs. Amitha S</td>
+                </tr>
+                <tr>
+                    <td>BCS406</td>
+                    <td>Analysis & Design of Algorithms Lab</td>
+                    <td>6</td>
+                    <td>Mrs. Kavitha K S & Mrs. Bhakti K P</td>
+                </tr>
+                <tr>
+                    <td>BCS405A</td>
+                    <td>Discrete Mathematical Structures</td>
+                    <td>4</td>
+                    <td>Dr. Vinod S V</td>
+                </tr>
+                <tr>
+                    <td>BCS460</td>
+                    <td>Technical writing using LATEX (Lab)</td>
+                    <td>6</td>
+                    <td>Mrs. R S Geethanjali & Mr. J R Haribhushan</td>
+                </tr>
+                <tr>
+                    <td>BBQC407</td>
+                    <td>Biology For Engineers</td>
+                    <td>2</td>
+                    <td>Mrs. Abhilasha E</td>
+                </tr>
+                <tr>
+                    <td>BJHK489</td>
+                    <td>Universal human value course</td>
+                    <td>1</td>
+                    <td>Mrs. Bhavana K S</td>
+                </tr>
+                <tr>
+                    <td>BNSK459</td>
+                    <td>National Service Scheme (NSS)</td>
+                    <td>1</td>
+                    <td>Mrs. Bhakti K P</td>
+                </tr>
+                <tr>
+                    <td>BPK2490</td>
+                    <td>Physical Education (PE) Sports and Athletics</td>
+                    <td>3</td>
+                    <td>Mrs. Kavitha K S</td>
+                </tr>
+                <tr>
+                    <td>BYOK169</td>
+                    <td>Yoga</td>
+                    <td>3</td>
+                    <td>Mrs. Anjana N</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
