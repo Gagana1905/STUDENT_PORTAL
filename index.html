@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSSEM-Student Portal Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="attend.jsx">
+</head>
+<body>
+    <div id="root"></div> 
+    <script type="module" src="/src/attendance.jsx"></script>
+    <div class="login-container" id="login-container">
+        <div class="login-box">
+            <div class="register-box" id="register-box" style="display: none;">
+    <h1>Student Registration</h1>
+    <form id="register-form">
+        <div class="input-group">
+            <label for="reg-usn">USN</label>
+            <input type="text" id="reg-usn" name="reg-usn" placeholder="Enter your USN" required>
+        </div>
+        <div class="input-group">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="reg-password" placeholder="Create a password" required>
+        </div>
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+        <p class="switch-form">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </form>
+    <p id="register-error" class="error-message"></p>
+</div>
+
+<!-- Add this link to your login box to show registration -->
+<p class="switch-form">Don't have an account? <a href="#" id="show-register">Register</a></p>
+            <h1>KSSEM-Student Portal Login</h1>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="usn">USN</label>
+                    <input type="text" id="usn" name="usn" placeholder="Enter your USN" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </div>
+
+    <div class="portal-container" id="portal-container" style="display: none;">
+        <header class="portal-header">
+            <div class="user-info">
+                <div class="avatar">CSE</div>
+                <div class="user-details">
+                    <h2>Branch: CSE</h2>
+                    <p>Sem: 4 | Division:4- A</p>
+                    <p>Roll No: 33 | Batch: A2</p>
+                </div>
+            </div>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </header>
+
+        <main class="portal-main">
+            <div class="dashboard-grid">
+                <div class="dashboard-card" onclick="showContent('academic-calendar')">
+                    <h3>Academic Calendar</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('time-table')">
+                    <h3>Time Table</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('attendance')">
+                    <h3>Attendance</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('lms')">
+                    <h3>LMS</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('announcement')">
+                    <h3>Announcement</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('transport')">
+                    <h3>Transport</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('internal-assessment')">
+                    <h3>Internal Assessment</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('exam-schedule')">
+                    <h3>Exam Schedule</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('results')">
+                    <h3>Results</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('fees')">
+                    <h3>Fees</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('feedback')">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="dashboard-card" onclick="showContent('notifications')">
+                    <h3>Notifications</h3>
+                </div>
+            </div>
+
+            <div class="content-display" id="content-display">
+                <div class="welcome-message">
+                    <h2>Welcome to Student Portal</h2>
+                    <p>Select an option from the dashboard to view details</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="portal-footer">
+            <p>App Version: 5.77(77)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
